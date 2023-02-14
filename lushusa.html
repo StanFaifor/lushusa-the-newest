@@ -22,29 +22,31 @@
           <i class="fa-solid fa-box"></i>
           <p>Track Order</p>
         </div>
-        <i class="fa-regular fa-location-dot"></i>
-        <div id="work-hours" class="section">
+        <i class="fa-regular fa-location-dot" onclick="toggleMenu()"></i>
+        <div id="work-hours" class="section" onclick="toggleMenu()">
           <p>University T...</p>
           <i class="fa-solid fa-chevron-down"></i>
           <p>10:00AM to 8:00PM</p>
         </div>
-        <div class="drop-down-menu-wrap">
+        <div class="drop-down-menu-wrap" id="subMenu">
           <div class="drop-down-menu">
             <div class="row">
-              <h3>My Pick-Up Store</h3>
+              <p>My Pick-Up Store</p>
             </div>
             <hr />
             <div class="row-2">
               <h3><strong>University Town Center</strong></h3>
               <span>4545 La Jolla Village Drive</span>
               <span>San Diego, CA 92122</span>
-              <span><i class="fa-regular fa-location-dot"></i>11 mi</span>
+              <span class="gray"
+                ><i class="fa-regular fa-location-dot"></i>11 mi</span
+              >
               <span
                 ><i class="fa-regular fa-location-dot"></i
                 ><a href="#">Get dirrections</a></span
               >
               <span
-                ><i class="fa-solid fa-phone"></i
+                ><i class="fa-solid fa-phone gray"></i
                 ><a href="#">858-552-9082</a></span
               >
             </div>
@@ -57,15 +59,16 @@
               <span>Friday 10:00AM to 08:00PM</span>
               <span>Saturday 10:00AM to 08:00PM</span>
               <span>Sunday 11:00AM to 07:00PM</span>
-              <span><a href="#">View Store Details</a></span>
-              <hr />
+              <span id="store-details"><a href="#">View Store Details</a></span>
             </div>
             <div class="row-4">
+              <hr />
               <button>CHANGE STORE</button>
             </div>
           </div>
         </div>
       </nav>
     </header>
+    <script src="lushusa.js"></script>
   </body>
 </html>

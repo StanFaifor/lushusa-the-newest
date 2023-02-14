@@ -3,6 +3,9 @@
 *::before {
   margin: 0;
 }
+.gray {
+  color: #c5c5c5;
+}
 .top-navbar {
   display: flex;
   justify-content: flex-end;
@@ -43,15 +46,82 @@
 #work-hours p:nth-of-type(2) {
   color: #c5c5c5;
 }
+
+/* Drop down menu */
+
 .drop-down-menu-wrap {
   position: absolute;
-  top: 37px;
+  top: 46px;
   right: 10%;
-  width: 384px;
-  height: 579px;
+  width: 400px;
+  height: 603px;
+  border: dotted 1px black;
+  overflow: hidden;
+  max-height: 0px;
+  transition: max-height 0.1s;
+}
+.drop-down-menu-wrap.open-menu {
+  max-height: 650px;
 }
 .drop-down-menu {
-  background-color: blue;
+  background-color: white;
   margin: 10px;
   padding: 20px;
+}
+.row {
+  font-size: 1.3rem;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  padding-bottom: 16px;
+  color: #262626;
+}
+.row-2 {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  padding: 16px 0;
+  color: #262626;
+}
+.row-2 span {
+  padding: 3px 0;
+}
+.row-2 span > a {
+  color: #262626;
+}
+.row-2 span > i {
+  padding-right: 5px;
+  padding-bottom: 15px;
+  font-size: 14px;
+}
+.row-3 {
+  color: #262626;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  margin-top: -5px;
+}
+.row-3 span {
+  padding: 2.5px 0;
+}
+.row-3 span a {
+  color: #262626;
+}
+#store-details {
+  margin-top: 17px;
+}
+.row-4 {
+  margin-top: 20px;
+}
+.row-4 button {
+  margin-top: 10px;
+  border: 1px solid black;
+  width: 274px;
+  height: 48px;
+  background-color: white;
+}
+.row-4 button:hover {
+  background-color: black;
+  color: white;
+  transition: 0.3s;
 }
