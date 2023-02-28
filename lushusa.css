@@ -332,7 +332,8 @@
   transition-delay: 0s;
 }
 #submenu2 > ul:first-child,
-#submenu3 > ul:first-child {
+#submenu3 > ul:first-child,
+#submenu4 > ul:first-child {
   margin-left: 100px;
   width: 175px;
 }
@@ -349,13 +350,18 @@
 }
 #submenu2 > ul:nth-child(5),
 #submenu3 > ul:nth-child(5),
-#submenu3 > ul:nth-child(4) {
+#submenu3 > ul:nth-child(4),
+#submenu4 > ul:nth-child(3),
+#submenu4 > ul:nth-child(5) {
   width: 180px;
 }
 #submenu2 > ul:nth-child(6),
 #submenu3 > ul:nth-child(6) {
   margin-right: 120px;
   width: 180px;
+}
+#submenu4 > ul:nth-child(5) {
+  margin-right: 330px;
 }
 .fa-circle {
   color: green;
