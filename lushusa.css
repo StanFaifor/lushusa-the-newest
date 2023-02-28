@@ -2,6 +2,7 @@
 *::after,
 *::before {
   margin: 0;
+  padding: 0;
 }
 .gray {
   color: #c5c5c5;
@@ -64,6 +65,7 @@
   overflow: hidden;
   max-height: 0px;
   transition: max-height 0.1s;
+  z-index: 999;
 }
 .drop-down-menu-wrap.open-menu {
   max-height: 650px;
@@ -248,9 +250,85 @@
 /* Bottom navbar */
 
 .bottom-navbar {
-  height: 70px;
-  background-color: #262626;
+  height: 56px;
+  background-color: #000;
+  padding-left: 100px;
+  padding-right: 150px;
+  border-top: 1px solid white;
 }
+.dropDownMenu-list {
+  display: flex;
+  justify-content: space-between;
+  padding-top: 18px;
+  list-style: none;
+  font-size: 1.1rem;
+  color: #fff;
+  position: relative;
+}
+.dropDownMenu-list a {
+  color: #fff;
+  text-decoration: none;
+}
+.dropDownMenu-listItem:hover .submenu {
+  opacity: 1;
+  visibility: visible;
+}
+.submenu {
+  position: absolute;
+  display: flex;
+  background-color: #fff;
+  color: #000;
+  justify-content: space-between;
+  top: 56px;
+  left: -100px;
+  width: 100vw;
+  opacity: 0;
+  visibility: hidden;
+  transition: opacity 0.2s ease-in-out, visibility 0.2s ease-in-out;
+  box-shadow: 0 0 15px rgba(0, 0, 0, 0.5);
+}
+.submenu ul {
+  margin: 15px 0;
+}
+.submenu li {
+  list-style: none;
+  padding: 5px 0;
+}
+.submenu li strong {
+  font-size: 17px;
+}
+.submenu li a {
+  font-size: 1rem;
+}
+.submenu li a:hover {
+  border-bottom: 1px solid #a2a0a0;
+  color: #a2a0a0;
+}
+.submenu ul:first-of-type {
+  margin-left: 100px;
+}
+.submenu ul:nth-of-type(3) {
+  width: 300px;
+}
+.submenu ul:nth-of-type(4) {
+  margin-right: 120px;
+}
+.submenu a {
+  text-decoration: none;
+  color: #000;
+}
+.borderbox {
+  background-color: #eae7e7;
+}
+.bottomBorder {
+  border-bottom: 1px solid black;
+}
+.dropDownMenu-listItem:hover .submenu {
+  opacity: 1;
+  visibility: visible;
+  transition-delay: 0s;
+}
+/* Main */
 
 main {
   background-color: yellow;
