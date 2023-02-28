@@ -1,6 +1,6 @@
-let subMenu = document.getElementById("subMenu");
+let dropDownMenuWrap = document.getElementById("dropDownMenuWrap");
 function toggleMenu() {
-  subMenu.classList.toggle("open-menu");
+  dropDownMenuWrap.classList.toggle("open-menu");
 }
 
 var navbar = document.getElementById("navbar");

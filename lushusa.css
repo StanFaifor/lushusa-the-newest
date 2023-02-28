@@ -304,18 +304,21 @@
   border-bottom: 1px solid #a2a0a0;
   color: #a2a0a0;
 }
-.submenu ul:first-of-type {
+#submenu1 ul:first-of-type {
   margin-left: 100px;
 }
-.submenu ul:nth-of-type(3) {
+#submenu1 ul:nth-of-type(3) {
   width: 300px;
 }
-.submenu ul:nth-of-type(4) {
+#submenu1 ul:nth-child(4) {
   margin-right: 120px;
 }
 .submenu a {
   text-decoration: none;
   color: #000;
+}
+.listImageItem {
+  background-color: #eae7e7;
 }
 .borderbox {
   background-color: #eae7e7;
@@ -328,6 +331,40 @@
   visibility: visible;
   transition-delay: 0s;
 }
+#submenu2 > ul:first-child,
+#submenu3 > ul:first-child {
+  margin-left: 100px;
+  width: 175px;
+}
+#submenu2 > ul:first-child > li > a > strong,
+#submenu3 > ul:first-child > li > a > strong,
+.black {
+  border-bottom: 1px solid black;
+  color: #000;
+}
+#submenu2 > ul:nth-child(2),
+#submenu3 > ul:nth-child(2),
+#submenu3 > ul:nth-child(3) {
+  width: 190px;
+}
+#submenu2 > ul:nth-child(5),
+#submenu3 > ul:nth-child(5),
+#submenu3 > ul:nth-child(4) {
+  width: 180px;
+}
+#submenu2 > ul:nth-child(6),
+#submenu3 > ul:nth-child(6) {
+  margin-right: 120px;
+  width: 180px;
+}
+.fa-circle {
+  color: green;
+  padding-left: 5px;
+}
+.green {
+  color: green;
+}
+
 /* Main */
 
 main {
