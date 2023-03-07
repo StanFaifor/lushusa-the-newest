@@ -333,7 +333,10 @@
 }
 #submenu2 > ul:first-child,
 #submenu3 > ul:first-child,
-#submenu4 > ul:first-child {
+#submenu4 > ul:first-child,
+#submenu5 > ul:first-child,
+#submenu5 > ul:nth-child(2),
+#submenu6 > ul:first-child {
   margin-left: 100px;
   width: 175px;
 }
@@ -352,16 +355,28 @@
 #submenu3 > ul:nth-child(5),
 #submenu3 > ul:nth-child(4),
 #submenu4 > ul:nth-child(3),
-#submenu4 > ul:nth-child(5) {
+#submenu4 > ul:nth-child(5),
+#submenu5 > ul:nth-child(3),
+#submenu5 > ul:nth-child(4) {
   width: 180px;
 }
 #submenu2 > ul:nth-child(6),
-#submenu3 > ul:nth-child(6) {
+#submenu3 > ul:nth-child(6),
+#submenu6 > ul:last-child {
   margin-right: 120px;
   width: 180px;
 }
 #submenu4 > ul:nth-child(5) {
   margin-right: 330px;
+}
+#submenu5 > ul:nth-child(4) {
+  margin-right: 350px;
+}
+#submenu6 > ul:nth-child(3) {
+  width: 170px;
+}
+.center > li:first-child {
+  text-align: center;
 }
 .fa-circle {
   color: green;
