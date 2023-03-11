@@ -58,7 +58,7 @@
 .drop-down-menu-wrap {
   position: absolute;
   top: 48px;
-  right: 10%;
+  right: 9.7%;
   width: 400px;
   height: 603px;
   border: dotted 1px black;
@@ -416,8 +416,101 @@
 }
 
 /* Main */
+.carousel {
+  position: relative;
+  height: 50px;
+  overflow: hidden;
+  height: 40px;
+  background-color: rgb(255, 221, 0);
+}
+.carousel-item {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  opacity: 0;
+  transition: opacity 1s ease-in-out;
+}
+.carousel-item.active {
+  opacity: 1;
+}
+.carousel-item strong {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  opacity: 0;
+  transition: opacity 1s ease-in-out 0.5s;
+  text-align: center;
+  width: 100%;
+}
+.carousel-item.active strong {
+  opacity: 1;
+}
+.carousel-item:not(.active) strong {
+  opacity: 0;
+}
+.carousel-item strong {
+  font-size: 19px;
+}
 
-main {
-  background-color: yellow;
-  height: 7000px;
+.bigBanner {
+  background-image: url(https://www.lushusa.com/dw/image/v2/BDMQ_PRD/on/demandware.static/-/Library-Sites-LushSharedLibrary/default/dw02581eb3/2023/homepage/march/A-Easter-2023-Item-42-1500x500-Hero_02_Hero_banner_desktop_1920x450.jpg?sh=440);
+  height: 440px;
+  position: relative;
+  background-size: cover;
+  background-position: center;
+}
+.bigBannerTextContainer {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  color: #fff;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  width: 100%;
+}
+.bigBannerTextContainer > h1 {
+  font-size: 60px;
+  margin-bottom: 10px;
+}
+.bigBannerTextContainer > h3 {
+  font-size: 34px;
+  text-align: center;
+  width: 75%;
+}
+.bigBanner::before {
+  content: "";
+  display: block;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.2);
+}
+.longBttn {
+  border: 1px solid #fff;
+  background-color: #000;
+  width: 300px;
+  height: 50px;
+  font-size: 13px;
+  margin-top: 20px;
+  color: #fff;
+  cursor: pointer;
+  transition: 0.5s;
+}
+.longBttn:hover {
+  border: 1px solid #000;
+  color: #000;
+  background-color: #fff;
+}
+
+.productBar {
+  height: 353px;
+  background-color: wheat;
 }
